@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    margin:0;
+}
+.hoverStyle {
+    transition:all 0.3s ease;
+}
+
+#root {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        font-family: "Inter", sans-serif; 
+        height: auto !important;
+        background-color: white;
+        --tw-bg-opacity: 1;
+        
+}
+.user_section {
+    display: flex;
+    flex-direction: column;
+    width:900px;
+    min-height: 100vh;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding:1.5rem;
+    padding-top: 9rem;
+    background-color: #F9F8F8;
+    box-shadow: inset 0px 0px 5px rgb(194, 192, 192, 0.5);
+}
+.user_section_all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 64rem;
+}
+.user_section_welcome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_section_welcome_1 {
+    display: flex;
+    flex-direction: column;
+    font-size:22px;
+}
+.user_search {
+    position:relative;
+    width:100%;
+    margin-top: 2.5rem;
+}
+.user_search_items {
+    display: flex;
+    gap:1rem;
+}
+.user_search_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #E2E8F0;
+    border-radius: 0.75rem;
+    min-height: 46px;
+    gap:0.25rem;
+    color:#94A3B8;
+    width:calc(100% - 150px);
+}
+.search_input {
+    display: flex;
+    border-style: none;
+    padding:1rem 0.5rem;
+    background-color: #E2E8F0;
+    font-size:16px;
+    width:100%;
+}
+.search_input:focus {
+    outline:none;
+}
+.user_search_item_inner{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+    font-size: 14px;
+    color:#8989B9;
+    cursor:pointer;
+    background-color:#E2E8F0;
+}
+.users_list{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap:1.5rem;
+    margin-top: 2.5rem;
+}
+.acount_card{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 400px;
+    padding:2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #F4F4F5;
+    border-radius: 10px;
+    border:1px solid #d7d8da;
+}
+.acount_card:hover{
+    box-shadow: 0px 0px 8px #c6c8ca;
+}
+.acount_card_items{
+    display:flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.acount_image > img {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.acount_image > img:hover {
+    cursor: pointer;
+}
+.acount_info{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.acount_name {
+    margin-top: 0.5rem;
+}
+.acount_name:hover {
+    color:#EF4444;
+    cursor: pointer;
+}
+
+.tag_items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.5rem;
+    margin-top:0.8rem;
+}
+.tag_item {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #CBD5E1;
+    color:#767779;
+    cursor:pointer;
+}
+.tag_item:hover{
+    background-color: #818CF8;
+    color:white;
+}
+.users_position{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom:1rem;
+    gap:1rem;
+}
+.users_position_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid #CAD4E0;
+    padding:0.5rem 1rem;
+    background-color: #FDFDFD;
+    cursor: pointer;
+}
+.users_position_button:hover{
+    background-color: #818CF8;
+    color:white;
+}
+.users_position_button > img {
+    width:16px;
+    height:16px;
+}
+.users_position_number{
+    padding:0.5rem 1rem;
+    background-color: #F1F5F9;
+    border-radius: 5px;
+}
+.users_position_number > p {
+    font-weight: bold;
+}
